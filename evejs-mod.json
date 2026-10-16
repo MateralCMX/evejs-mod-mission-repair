@@ -10,7 +10,7 @@
     "evejs-mission-data-pack"
   ],
   "delisted": false,
-  "description": "任务池与系列、敌对势力、DED门、外部任务编成差量；七波兜底待NPC依赖核验后另行启用。",
+  "description": "扩充并修复代理人战斗任务、系列任务衔接与部分 DED 加速门，改善任务接取和推进体验。",
   "displayName": "任务修复",
   "downloadUrls": [
     {
@@ -23,12 +23,21 @@
     "0.12.9"
   ],
   "featured": false,
-  "highlights": [],
+  "highlights": [
+    "扩充安全代理人任务选择，并改善敌对势力筛选。",
+    "支持系列任务按顺序衔接。",
+    "补充任务战斗内容及代理人任务绑定。",
+    "修复部分 DED 加速门连接，过滤无效目的地与空循环。",
+    "暂时移出部分内容不完整的任务，避免继续分发。"
+  ],
   "history": [],
   "id": "mission-repair",
   "publishedAt": "2026-10-16",
   "readme": [
-    "适用 EveJS 0.12.9 / native / 启动器注入总线 API 1。代码仅追加到内存，不覆盖服务端源码或静态表。七个目标的原始源码前缀须全部匹配 `baselines.json`；升级后重新审核，不绕过校验。"
+    "扩充并修复代理人战斗任务、系列任务衔接与部分 DED 加速门，改善任务接取和推进体验。",
+    "启用后重启游戏服务端。不能与 evejs-mission-data-pack 同时启用。",
+    "当前不提供七波通用战斗补全功能。已接取的任务保留原有进度；停用前请先完成或妥善处理进行中的任务并备份存档，停用不会撤回物品和奖励。",
+    "任务数据来源说明保留在 data/provenance.json。"
   ],
   "repo": "https://github.com/MateralCMX/evejs-mod-mission-repair",
   "requiresRestart": true,
